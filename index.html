@@ -8,11 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
-
+    <!--BS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <!--estilos-->
     <link rel="stylesheet" href="./css/style.css">
     <title>Atra Canning</title>
-
+    
 </head>
 <body>
     <div class="grid_container">
@@ -23,76 +24,126 @@
             <div class="logo">
                 <img src="./assets/LOGO ATRA CANNING .png" alt="logo">
             </div>
-            <nav class="menu">
+
+
+
+            <!--<nav class="menu">
                     <ul>
                         <li><a href="./index.html">Inicio</a></li>
                         <li><a href="./pages/el_taekwondo.html">El Taekwondo</a></li>
                         <li><a href="./pages/grupos_sedes_horarios.html">Grupos Sedes y Horarios</a></li>
                         <li><a href="./pages/contacto.html">Contacto</a></li>
                     </ul>
+                </nav> -->
+            
+                <nav class="navbar navbar-expand-lg bg-body-tertiary mmenu">
+                    <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        <a class="nav-link" href="./pages/el_taekwondo.html">El Taekwondo</a>
+                        <a class="nav-link" href="./pages/grupos_sedes_horarios.html">Grupos Sedes y Horarios</a>
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </div>
+                    </div>
+                    </div>
                 </nav>
             
         </header>
         <main class="contenido">
+
+            <section class="quienes_somos">
+                <h2>¿Quiénes somos?</h2>
+                <div class="instructores-container">
+                    <article class="instructor">
+                        <h3>Yanina Lamelas</h3>
+                            <div class="instructor-info">
+                                <img src="./assets/yani_cortada.jpg" alt="Foto de Yanina Lamelas">
+                                <ul>
+                                    <li>Directora y socia fundadora de la Escuela de Taekwon-Do ATRA Canning</li>
+                                    <li>Instructora internacional de Taekwon-Do ITF - Cinturón negro VI Dan</li>
+                                </ul>
+                            </div>
+                    </article>
+                    
+                    <article class="instructor">
+                        <h3>Leandro Baistrocchi</h3>
+                            <div class="instructor-info">
+                                <img src="./assets/lean_cortado.jpg" alt="Foto de Leandro Baistrocchi">
+                                <ul>
+                                    <li>Director y socio fundador de la Escuela de Taekwon-Do ATRA Canning</li>
+                                    <li>Instructor internacional de Taekwon-Do ITF - Cinturón negro V Dan</li>
+                                </ul>
+                            </div>
+                    </article>
+                </div>
+            </section>
+            
                 
                 <section class="carrousel">
                     <!-- esto va a ser un carrousel-->
-                    <img src="./assets/carrousel1.png" alt="foto1">
+                    <!--<img src="./assets/carrousel1.png" alt="foto1">
                     <img src="./assets/carrousel2.png" alt="foto2">
                     <img src="./assets/carrousel3.png" alt="foto3">
                     <img src="./assets/carrousel4.png" alt="foto4">
-                </section>
+                </section>-->
 
-                <section class="quienes_somos">
-                    <h2>¿Quiénes somos?</h2>
-                    <div class="instructores-container">
-                        <article class="instructor">
-                            <h3>Yanina Lamelas</h3>
-                                <div class="instructor-info">
-                                    <img src="./assets/yani_cortada.jpg" alt="Foto de Yanina Lamelas">
-                                    <ul>
-                                        <li>Directora y socia fundadora de la Escuela de Taekwon-Do ATRA Canning</li>
-                                        <li>Instructora internacional de Taekwon-Do ITF - Cinturón negro VI Dan</li>
-                                    </ul>
-                                </div>
-                        </article>
-                        
-                        <article class="instructor">
-                            <h3>Leandro Baistrocchi</h3>
-                                <div class="instructor-info">
-                                    <img src="./assets/lean_cortado.jpg" alt="Foto de Leandro Baistrocchi">
-                                    <ul>
-                                        <li>Director y socio fundador de la Escuela de Taekwon-Do ATRA Canning</li>
-                                        <li>Instructor internacional de Taekwon-Do ITF - Cinturón negro V Dan</li>
-                                    </ul>
-                                </div>
-                        </article>
-                    </div>
-                </section>
-                
                 <section class="nuestra_propuesta">
                     <h2>Nuestra Propuesta</h2>
+
+                    <div class="nuestra_propuesta_container">
                     <div class="foto-grande">
                         <img src="./assets/patada.jpg" alt="Técnica de patada en Taekwon-Do">
                     </div>
                     <p>
                     La Escuela de Taekwon-Do ATRA Canning se encuentra ubicada en la zona de Canning y está dedicada a la enseñanza y promoción de este arte marcial.
-                    El Taekwon-Do no solo es un deporte, sino también una herramienta que fomenta el desarrollo integral de la persona. A través de su práctica, se trabaja la disciplina, el autocontrol, el respeto y la perseverancia, contribuyendo significativamente a la salud física y mental.
-                    </p>
-                    <p>
+                    El Taekwon-Do no solo es un deporte, sino también una herramienta que fomenta el desarrollo integral de la persona. A través de su práctica, se trabaja la disciplina, el autocontrol, el respeto y la perseverancia, contribuyendo significativamente a la salud física y mental. 
+                    
                     Estas cualidades hacen del Taekwon-Do una actividad ideal para todas las edades, promoviendo un estilo de vida activo y saludable dentro de la comunidad.
-                    </p>
-                    <p>
-                    Contamos con un equipo de instructores certificados y con más de 25 años de experiencia, comprometidos en brindar una enseñanza de calidad, adaptándonos a los diferentes niveles y edades de los alumnos.
-                    </p>
-                    <p>
-                    Los directores de la escuela ATRA Canning son los instructores internacionales Yanina Lamelas (cinturón negro VI Dan) y Leandro Baistrocchi (cinturón negro V Dan), ambos alumnos directos del Maestro Marcelo Vatrano VIII Dan.
-                    </p>
-                    <p>
-                    La escuela ATRA Canning cuenta con el aval de la Asociación de Taekwon-Do de la República Argentina (personería jurídica 1.583.870) y de la Federación Argentina de Taekwon-Do, además de formar parte de la red de escuelas de la Federación Internacional de Taekwon-Do.
-                    </p>
+                    
+                    Contamos con un equipo de instructores certificados y con más de 25 años de experiencia, comprometidos en brindar una enseñanza de calidad, adaptándonos a los diferentes niveles y edades de los alumnos.</p>
+                    
+                    </div>
                 </section>
-                
+    <div class="aside">
+
+        <!--agrego carrousel de bs-->
+        
+        <p class="p2">
+            Los directores de la escuela ATRA Canning son los instructores internacionales Yanina Lamelas (cinturón negro VI Dan) y Leandro Baistrocchi (cinturón negro V Dan), ambos alumnos directos del Maestro Marcelo Vatrano VIII Dan.
+            La escuela ATRA Canning cuenta con el aval de la Asociación de Taekwon-Do de la República Argentina (personería jurídica 1.583.870) y de la Federación Argentina de Taekwon-Do, además de formar parte de la red de escuelas de la Federación Internacional de Taekwon-Do.
+            </p>
+            <div class="container w-50">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/gups.png" class="d-block w-100" alt="foto1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/encuentro_deportivo.png" class="d-block w-100" alt="foto2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/world_cup.png" class="d-block w-100" alt="foto3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/kinder.png" class="d-block w-100" alt="foto4">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+    </div>
 
         </main>
         <footer class="pie_de_pagina">
@@ -113,7 +164,9 @@
         </footer>
 
     </div>
-
+    <!--sript bs-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -24,10 +24,11 @@ gris claro : #EDF7F8
 .grid_container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 0.25fr 1.5fr 0.25fr ;
+    grid-template-rows: 0.25fr 1.5fr 0,5 0.25fr ;
     grid-template-areas: 
         "header header"
         "cont   cont"
+        "asi    asi"
         "foo    foo ";
 }
 
@@ -36,7 +37,7 @@ gris claro : #EDF7F8
 .cabeza{
     grid-area: header;
     background: url(../assets/patada_gris_2.jpg) center top no-repeat;
-    background-size: cover;  /* Asegura que la imagen cubra todo el ancho y alto */
+    background-size: cover;  
     position: relative;
     display: flex;
     flex-direction: column;
@@ -69,9 +70,66 @@ gris claro : #EDF7F8
     border: #8D9597;
     
 }
+
+.mmenu{
+    width: 100%;
+    background-color: #10628D; 
+}
+.mmenu .navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.mmenu .navbar-nav .nav-item {
+    border: 2px solid #EDF7F8;
+    border-radius: 5px;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    background-color: #34495e;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.mmenu .navbar-nav .nav-link {
+    font-family: "Patrick Hand SC", cursive;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: hwb(236 0% 72%);
+    font-weight: bold;
+}
+
+.mmenu .navbar-nav .nav-item:hover {
+    background-color: #10628D;
+    transform: scale(1.1);
+}
+
+.mmenu .navbar-nav .nav-link:hover {
+    color: #992929;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .menu{
     width: 100%;
-
     background-color: #000000; 
     
 }
@@ -150,43 +208,53 @@ main{
 
 }
 
+.quienes_somos{
+    border-radius: 10px;
+    border-style: solid;
+    padding: 2rem;
+    gap: 2rem;
+    margin: 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    
+}
 .quienes_somos h2{
     color: #000000;
     font-size: 3rem;
     text-align: center;
+    
 }
 
-
-/*
-.fotos_profes img {
-    width: 300px;
-
+.aside {
+    grid-area: aside;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 1rem;
+    border-radius: 10px;
+    
 }
 
-.profes{
-    font-size: 2rem;
+.aside .p2 {
+    flex: 1;
+    min-width: 250px;
+    font-size: 1.5rem;
+    color: #10628D;
     font-style: italic;
-}
-.texto_profes {
-    font-size: 1rem;
-}
+    }
 
-*/
-/*
-.instructor {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 1rem;
-}*/
+
+
+
 
 /*prueba de flex en las tarjetas*/
 
 .instructores-container {
     display: flex;
     gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap; /* Para que se acomoden verticalmente en pantallas chicas */
+    justify-content:space-around; 
+    flex-wrap: wrap; 
     margin-top: 2rem;
 }
 
@@ -198,6 +266,10 @@ main{
     max-width: 350px;
     flex: 1 1 300px;
     text-align: center;
+}
+
+.d-block{
+    border-radius: 12px;
 }
 
 .instructor img {
@@ -220,21 +292,49 @@ main{
 
 .instructor ul li {
     margin-bottom: 0.5rem;
-    font-size: 0.95rem;
-}
-
-
-
-
-
-
-
-.nuestra_propuesta {
     font-size: 1.5rem;
+    text-align: start;
 }
-.foto_grande img {
-    width: 500px;
+
+
+
+
+
+
+.nuestra_propuesta h2{
+    color: #000000;
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
 }
+
+.nuestra_propuesta_container {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    padding: 2rem;
+}
+
+.foto-grande {
+    flex: 1 1 300px; 
+}
+
+.foto-grande img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.nuestra_propuesta_container p {
+    flex: 2 1 500px; 
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+
+
+
 
 
 .grupos h2{
