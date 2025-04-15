@@ -1,0 +1,361 @@
+
+/*
+colores de la paleta:
+negro : #000000
+amarillo : #EDCC29
+azul: #10628D
+gris oscuro : #8D9597
+gris claro : #EDF7F8
+
+*/
+
+/*reset*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Patrick Hand SC", cursive;
+}
+/*html, header, body {
+    width: 100%;
+    height: 100%;
+}*/
+
+/*grid container*/
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 0.25fr 1.5fr 0.25fr ;
+    grid-template-areas: 
+        "header header"
+        "cont   cont"
+        "foo    foo ";
+}
+
+/* header*/
+
+.cabeza{
+    grid-area: header;
+    background: url(../assets/patada_gris_2.jpg) center top no-repeat;
+    background-size: cover;  /* Asegura que la imagen cubra todo el ancho y alto */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 65vh;
+
+}
+
+.titulo_superior {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: #000000; 
+    color: #ffffff; 
+    font-family: "Patrick Hand SC", cursive; 
+    font-size: 1rem;
+    text-align: center; 
+    text-transform: uppercase; 
+    z-index: 1000; 
+    padding: 10px 0; 
+}
+
+
+.logo img {
+
+    width: 15rem;
+    padding-top: 75px;
+    border: #8D9597;
+    
+}
+.menu{
+    width: 100%;
+
+    background-color: #000000; 
+    
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around; 
+}
+
+.menu ul li {
+    border: 2px solid #EDF7F8; 
+    border-radius: 5px; 
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    background-color: #34495e; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+
+
+.menu ul li a  {
+    font-family: "Patrick Hand SC", cursive;    
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #EDF7F8;
+    list-style: none;
+    color: #fff; 
+    font-weight: bold;
+    
+    }
+    
+.menu ul li:hover {
+        background-color: #10628D; 
+        transform: scale(1.1); 
+    }
+    
+.menu ul li a:hover {
+        color: #fff; 
+    }  
+
+
+
+
+
+
+/* main*/
+
+
+
+main{
+    background-color: #ffffff;
+}
+
+.contenido{
+    grid-area: cont;
+}
+
+.carrousel{
+    background-color: #ffffff;
+    padding: 10px;
+    width: 100%;
+    
+}
+
+.carrousel img{
+    
+    width: 300px;
+
+}
+
+.quienes_somos h2{
+    color: #000000;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+/*
+.fotos_profes img {
+    width: 300px;
+
+}
+
+.profes{
+    font-size: 2rem;
+    font-style: italic;
+}
+.texto_profes {
+    font-size: 1rem;
+}
+
+*/
+/*
+.instructor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}*/
+
+/*prueba de flex en las tarjetas*/
+
+.instructores-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap; /* Para que se acomoden verticalmente en pantallas chicas */
+    margin-top: 2rem;
+}
+
+.instructor {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.instructor img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.instructor h3 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.instructor ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.instructor ul li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+
+
+
+
+
+
+.nuestra_propuesta {
+    font-size: 1.5rem;
+}
+.foto_grande img {
+    width: 500px;
+}
+
+
+.grupos h2{
+    color: #000000;
+    font-size: 3rem;
+}
+.grupos_cards{
+    font-size: 2rem;
+}
+.card h3{
+    font-size: 2rem;
+}
+.card p{
+    font-size: 1rem;
+}
+
+.grupos_cards img {
+    width: 20%;
+}
+.sedes h2{
+    color: #000000;
+    font-size: 3rem;
+}
+
+.contenido_sedes {
+    font-size: 1.5rem;
+}
+
+.horarios h2{
+    color: #000000;
+    font-size: 3rem;
+}
+
+
+.sedes {
+    max-width: 800px;
+    font-family: Arial, sans-serif;
+}
+
+.sede {
+    border: 2px solid #10628D;
+    
+    background: #f9f9f9;
+    
+}
+
+.sede h3 {
+    color: #10628D;
+    font-size: 18px;
+}
+
+.sede p {
+
+    font-size: 16px;
+}
+
+.redes_grande ul li img{
+    width: 75px;
+}
+
+
+/* footer*/
+
+
+
+.pie_de_pagina{
+    grid-area: foo;
+    padding: 30px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #000000;
+    
+    color: #8D9597;
+}
+.pie_de_pagina img{
+    
+    height: 100px;
+        
+    
+    
+}
+
+
+.redes  li {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    color: #EDF7F8;
+    font-size: 1.2rem;
+    padding-right: 100px;
+    
+}
+
+.redes li a {
+    margin-left: 10px; 
+    text-decoration: none; 
+    color: inherit; 
+    height: 50px;
+    
+}
+
+
+.redes li img {
+    height: 40px;
+    padding-left: 20px;
+}
+
+
+/*desktop a mobile
+tablet 768px
+mobile 480 px*/
+
+/*tablet*/
+@media (max-width: 768px){
+    .grid_container{
+        background-color: aqua /*prueba de responsive*/
+        
+        ;
+    }
+
+}
+
+/*mobile*/
