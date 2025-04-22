@@ -47,23 +47,11 @@
         </header>
 
         <main class="contenido">
+
         <section class="grupos">
             <h2>Grupos</h2>
 
             
-            <!--<div class="grupos_cards">
-                <div class="card">
-                    <img src="../assets/infantiles_1.jpg" alt="Infantiles">
-                    <h3>Infantiles</h3>
-                    <p>De 5 a 10 años</p>
-                </div>
-                <div class="card">
-                    <img src="../assets/juv_adultos.jpg" alt="Juveniles y Adultos">
-                    <h3>Juveniles y Adultos</h3>
-                    <p>Para todas las edades</p>
-                </div>
-            </div>-->
-
         <div class="cards_container">
             <div class="card" style="width: 18rem;">
                 <p class="titulo_card">Infantiles</p>
@@ -86,62 +74,90 @@
         <section class="sedes">
             <h2>Sedes</h2>
             <div class="contenido_sedes">
-                <p>Nuestras sedes están equipadas con instalaciones de primer nivel, diseñadas para garantizar comodidad y seguridad durante el entrenamiento. Contamos con amplios espacios de práctica con pisos de goma, espejos y equipamiento especializado para el desarrollo técnico y físico. 
+                <p class="card">Nuestras sedes están equipadas con instalaciones de primer nivel, diseñadas para garantizar comodidad y seguridad durante el entrenamiento. Contamos con amplios espacios de práctica con pisos de goma, espejos y equipamiento especializado para el desarrollo técnico y físico. 
 
                 Además, nuestras áreas comunes ofrecen vestuarios, zonas de descanso y todo lo necesario para que vivas una experiencia completa y enriquecedora en cada clase. ¡Veni y entrená con nosotros en un entorno profesional y motivador!
                     </p>
             </div>
-            <div class="grupos_cards">
-                <div class="card">
-                    <img src="../assets/mapa_inva.png" alt="Inva">
-                    <h3>Inva</h3>
+            <h2>¿Dónde estamos?</h2>
+        <div class="maps_container">
+            <section class="mapa-ubicacion">
+                
+                <h3>Inva</h3>
                     <p>Tte. Giribone 2449 - Canning - Ezeiza</p>
-                </div>
-                <div class="card">
-                    <img src="../assets/mapa_saint_thomas.png" alt="Saint Thomas">
-                    <h3>Barrio Saint Thomas Oeste</h3>
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.778805381122!2d-58.50278998778107!3d-34.86178487274982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd725f0d52c35%3A0x6cb7649ce7213bf!2sInvaFitness%20-%20Sede%20Canning!5e0!3m2!1ses-419!2sar!4v1745276728350!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+            </section>
+
+            <section class="mapa-ubicacion">
+                <h3>Barrio Saint Thomas Oeste</h3>
                     <p>Lorenzo Cresmani 4640 - Canning</p>
-                </div>
-                <div class="card">
-                    <img src="../assets/mapa_la_lomita.png" alt="La Lomita">
-                    <h3>La Lomita</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.261854135941!2d-58.50782280041377!3d-34.899877657700465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd72122c25323%3A0xb7591cf5aa470808!2sSaint%20Thomas%20Este-Oeste!5e0!3m2!1ses-419!2sar!4v1745276917727!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <section class="mapa-ubicacion">
+                <h3>La Lomita</h3>
                     <p>La Lomita 1362 - La Unión - Ezeiza</p>
-                </div>
-            </div>
-        </section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.6394705307243!2d-58.547789687780266!3d-34.8903985727397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd765afa17edd%3A0x3a72491d635c3a9b!2sLa%20Lomita%201362%2C%20B1803%20La%20Uni%C3%B3n%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1745277062963!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
+            
     
         <section class="horarios">
             <h2>Horarios</h2>
-            <div class="sede">
-                <h3>Tte. Giribone 2449 - Canning - Ezeiza</h3>
-                <p><strong>Grupo:</strong> Infantiles</p>
-                <p><strong>Día y horario:</strong> Martes y Jueves 18hs</p>
-                <p><strong>Instructores:</strong> Yanina Lamelas 6° Dan y Leandro Baistrocchi 5° Dan</p>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Tte. Giribone 2449 - Canning - Ezeiza
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="grupo"><p><strong>Grupo Infantiles</strong></p></div>
+                        <p><strong>Día y horario:</strong> Martes y Jueves 18hs</p>
+                        <p><strong>Instructores:</strong> Yanina Lamelas 6° Dan y Leandro Baistrocchi 5° Dan</p>
+                        <div class="grupo"><p><strong>Grupo Juveniles y Adultos</strong></p></div>
+                        <p><strong>Día y horario:</strong> Martes y Jueves 19hs</p>
+                        <p><strong>Instructores:</strong> Yanina Lamelas 6° Dan y Leandro Baistrocchi 5° Dan</p>
+
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Barrio Saint Thomas Oeste
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="grupo"><p><strong>Grupo Infantiles</strong></p></div>
+                        <p><strong>Día y horario:</strong> Lunes y Miércoles 18hs</p>
+                        <p><strong>Instructores:</strong> Yanina Lamelas 6° Dan y Leandro Baistrocchi 5° Dan</p>
+                        
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    La Lomita 1362 - La Unión - Ezeiza
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="grupo"><p><strong>Grupo Infantiles</strong></p></div>
+                        <p><strong>Día y horario:</strong>Martes, Jueves y Viernes 19hs</p>
+                        <p><strong>Instructores:</strong> Miguel Martinez 4° Dan</p>
+                        <div class="grupo"><p><strong>Grupo Juveniles y Adultos</strong></p></div>
+                        <p><strong>Día y horario:</strong> Martes, Jueves y Viernes 20hs</p>
+                        <p><strong>Instructores:</strong> Miguel Martinez 4° Dan</p>
+
+                    </div>
+                </div>
+                </div>
             </div>
-            <div class="sede">
-                <h3>Tte. Giribone 2449 - Canning - Ezeiza</h3>
-                <p><strong>Grupo:</strong> Juveniles y Adultos</p>
-                <p><strong>Día y horario:</strong> Martes y Jueves 19hs</p>
-                <p><strong>Instructores:</strong> Yanina Lamelas 6° Dan y Leandro Baistrocchi 5° Dan</p>
-            </div>
-            <div class="sede">
-                <h3>Barrio Saint Thomas Oeste</h3>
-                <p><strong>Grupo:</strong> Infantiles</p>
-                <p><strong>Día y horario:</strong> Lunes y Miércoles 18hs</p>
-                <p><strong>Instructores:</strong> Yanina Lamelas 6° Dan y Leandro Baistrocchi 5° Dan</p>
-            </div>
-            <div class="sede">
-                <h3>La Lomita 1362 - La Unión - Ezeiza</h3>
-                <p><strong>Grupo:</strong> Infantiles</p>
-                <p><strong>Día y horario:</strong> Martes, Jueves y Viernes 19hs</p>
-                <p><strong>Instructores:</strong> Miguel Martinez 4° Dan</p>
-            </div>
-            <div class="sede">
-                <h3>La Lomita 1362 - La Unión - Ezeiza</h3>
-                <p><strong>Grupo:</strong> Juveniles y Adultos</p>
-                <p><strong>Día y horario:</strong> Martes, Jueves y Viernes 20hs</p>
-                <p><strong>Instructores:</strong> Miguel Martinez 4° Dan</p>
-            </div>
+
         </section>
         </main>
         <footer class="pie_de_pagina">

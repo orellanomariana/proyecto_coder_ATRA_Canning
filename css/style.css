@@ -407,6 +407,10 @@ main{
 .grupos_cards img {
     width: 20%;
 }*/
+.card{
+    padding: 10px;
+    border-radius: 10px;
+}
 
 .cards_container{
     display: flex;
@@ -451,6 +455,13 @@ main{
     font-size: 3rem;
 }
 
+.maps_container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    border: solid;
+}
 
 .sedes {
     
@@ -478,6 +489,35 @@ main{
     width: 75px;
 }
 
+.grupo{
+    text-align: center;
+    font-size: x-large;
+}
+
+
+.contenido_contacto{
+    display: flex;
+    
+}
+.formulario{
+    width: 800px;
+}
+.redes_grande{
+    
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    align-items: center;
+}
+
+.redes_grande ul li{
+    list-style: none;
+    
+}
+
+.formulario_contacto{
+    display: flex;
+}
 
 /* footer*/
 
@@ -525,6 +565,8 @@ main{
     height: 40px;
     padding-left: 20px;
 }
+
+
 
 
 /*desktop a mobile
