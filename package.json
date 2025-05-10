@@ -1,0 +1,17 @@
+{
+  "name": "web_tkd_atra_canningv02_bs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "sass": "sass --no-source-map scss/style.scss css/style.css",
+  "sass:watch": "sass --no-source-map --watch scss/style.scss:css/style.css",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.87.0"
+  }
+}

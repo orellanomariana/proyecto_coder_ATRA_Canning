@@ -1,0 +1,65 @@
+@use 'variables';
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: variables.$font-stack1;
+}
+
+body {
+    font-size: variables.$font-size-default;  
+    color: #333;
+    background-color: variables.$primary_color; 
+}
+
+//titulos
+h1, h2, h3 {
+    margin: 0;
+    font-weight: variables.$font-weight-bold; 
+}
+
+h2 {
+    font-size: variables.$font-size-large;
+    text-align: center; 
+    padding: 20px;
+
+}
+
+.copyright{
+    font-family: variables.$font_stack2;
+    font-size: 1rem;
+    margin-top: auto;
+    text-align: left;
+    
+}
+
+// Media queries
+@media (max-width: 768px) {
+    header {
+        height: 45vh;
+        background-position: center center;
+    }
+    .nuestra_propuesta_container {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    }
+
+}
+
+@media (max-width: 576px) {
+    header {
+        height: 35vh;
+        background-position: center center;
+    }
+    .instructor img {
+    width: 90%;
+    }
+}
+.aside a{
+    font-family: variables.$font-stack2;
+}

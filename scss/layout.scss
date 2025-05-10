@@ -1,0 +1,194 @@
+// layout.scss
+
+@use 'variables' ; 
+@use 'mixins' ;    
+
+// Grid container
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header"
+        "cont   cont"
+        "asi    asi"
+        "foo    foo";
+}
+
+// Header
+.cabeza {
+    @include mixins.header-style('../assets/patada_gris_2.jpg');
+
+    .titulo_superior {
+        @include mixins.titulo-superior-style(
+            variables.$second_color,
+            variables.$primary_color,
+            variables.$font-stack1,
+            1rem,
+            10px 0
+        );
+    }
+}
+
+//menu
+.mmenu {
+    width: 100%;
+
+    .navbar-nav {
+    @include mixins.flex-center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+.navbar-collapse {
+    position: relative;
+    z-index: 1060;
+    justify-content: center;
+    background-color: variables.$primary_color;
+}
+
+//main
+//index
+.contenido {
+    grid-area: cont;
+}
+
+.carrousel_container {
+    background-color: variables.$primary_color;
+    padding-inline: 40px;
+    width: 100%;
+    position: relative; 
+    z-index: 1050;
+}
+
+.quienes_somos {
+    padding: 2rem;
+    gap: 2rem;
+    margin: 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+
+  // Estilos para instructores
+.instructores-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.instructor {
+    background-color: variables.$sixth_color;
+    padding: 1rem;
+    box-shadow: variables.$box-shadow-default;
+    max-width: 350px;
+    flex: 1 1 300px;
+    text-align: center;
+
+    p {
+        font-size: 25px;
+        text-emphasis: inherit;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: variables.$border_radius;
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+        color: variables.$fourth_color;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+            text-align: start;
+        }
+    }
+}
+
+  // Propuesta
+
+.nuestra_propuesta_container {
+    @include mixins.flex-column-gap(2rem);
+    background-color: variables.$sixth_color;
+    padding: 2rem;
+    box-shadow: variables.$box-shadow-default;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    p{
+        font-size: inherit;
+        line-height: inherit;    
+    }
+}
+
+.texto_propuesta {
+    flex: 1 1 60%;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+
+.foto-grande img {
+    width: 75%;
+    height: auto;
+    border-radius: variables.$border_radius;
+}
+
+//el taekwon-do
+
+.texto{
+    @include mixins.flex-column-gap(2rem);
+    background-color: variables.$sixth_color;
+    padding: 2rem;
+    box-shadow: variables.$box-shadow-default;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+//contacto
+
+// _layout.scss
+
+.contenido_contacto {
+    display: flex;
+}
+
+.formulario_contacto {
+    display: flex;
+}
+
+
+
+
+// footer
+
+.pie_de_pagina {
+    grid-area: foo;
+    padding: 2rem;
+    @include mixins.flex-space-between;
+    background-color: variables.$second_color;
+    color: variables.$fourth_color;
+}
+
+.pie_de_pagina img {
+    height: 100px;
+}
+

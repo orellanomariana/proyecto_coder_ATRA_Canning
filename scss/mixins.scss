@@ -1,0 +1,91 @@
+@use 'variables'; 
+
+// Mixin para el header
+@mixin header-style($background-image) {
+    grid-area: header;
+    background: url(#{$background-image}) center top no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 65vh;
+}
+
+// Mixin para el logo
+@mixin logo-style($logo-width, $logo-padding-top, $border-color, $border-radius) {
+    img {
+        width: $logo-width;
+        padding-top: $logo-padding-top;
+        border: $border-color;
+        border-radius: $border-radius;
+    }
+}
+
+// Mixin para el título superior
+@mixin titulo-superior-style($background-color, $text-color, $font-family, $font-size, $padding) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $background-color;
+    color: $text-color;
+    font-family: $font-family;
+    font-size: $font-size;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1000;
+    padding: $padding;
+}
+
+@mixin flex-center($align: center) {
+    display: flex;
+    justify-content: center;
+    align-items: $align;
+}
+
+
+
+// mixins nav bar
+@mixin nav-link-style($color, $font-size, $padding) {
+    font-weight: 800;
+    color: $color;
+    padding: $padding;
+    font-size: $font-size;
+    font-family: variables.$font-stack1;
+    text-decoration: none;
+}
+
+//mixins main
+@mixin flex-row-gap($gap: 1rem) {
+    display: flex;
+    flex-direction: row;
+    gap: $gap;
+    align-items: flex-start;
+}
+
+@mixin flex-column-gap($gap: 1rem) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+    align-items: flex-start;
+}
+
+//mixin para cards
+@mixin card-style($bg, $radius, $padding, $shadow, $max-width) {
+    background-color: $bg;
+    border-radius: $radius;
+    padding: $padding;
+    box-shadow: $shadow;
+    max-width: $max-width;
+    margin: 0 auto;
+    border: none;
+}
+
+//mixins footer
+@mixin flex-space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
