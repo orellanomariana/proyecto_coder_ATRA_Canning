@@ -1,7 +1,8 @@
 // layout.scss
 
 @use 'variables' ; 
-@use 'mixins' ;    
+@use 'mixins' ;
+@use 'animations';    
 
 // Grid container
 .grid_container {
@@ -11,7 +12,6 @@
     grid-template-areas: 
         "header header"
         "cont   cont"
-        "asi    asi"
         "foo    foo";
 }
 
@@ -90,6 +90,7 @@
     max-width: 350px;
     flex: 1 1 300px;
     text-align: center;
+    
 
     p {
         font-size: 25px;
@@ -149,6 +150,8 @@
     width: 75%;
     height: auto;
     border-radius: variables.$border_radius;
+
+
 }
 
 //el taekwon-do
@@ -168,11 +171,25 @@
 // _layout.scss
 
 .contenido_contacto {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    grid-area: cont;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
 }
 
-.formulario_contacto {
+.formulario {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.formulario form {
+    width: 100%;
+    max-width: 600px;
 }
 
 
