@@ -95,16 +95,17 @@ h2 {
 
 .cabeza {
   grid-area: header;
-  background: url(../assets/patada_gris_2.jpg) center top no-repeat;
+  background: url(../assets/patada_gris_2.webp) center top no-repeat;
   background-size: cover;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 65vh;
+  height: 65vh !important;
 }
-.cabeza .titulo_superior {
+
+.titulo_superior {
   position: fixed;
   top: 0;
   left: 0;
@@ -454,3 +455,5 @@ h2 {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
+
+/*# sourceMappingURL=style.css.map */

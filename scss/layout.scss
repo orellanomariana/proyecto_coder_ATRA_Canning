@@ -17,9 +17,9 @@
 
 // Header
 .cabeza {
-    @include mixins.header-style('../assets/patada_gris_2.jpg');
+    @include mixins.header-style('../assets/patada_gris_2.webp')}
 
-    .titulo_superior {
+.titulo_superior {
         @include mixins.titulo-superior-style(
             variables.$second_color,
             variables.$primary_color,
@@ -28,7 +28,7 @@
             10px 0
         );
     }
-}
+
 
 //menu
 .mmenu {
